@@ -1,0 +1,8 @@
+@inproceedings{REPO315,
+    author = "Wang, Liangdao and Pan, Yan and Liu, Cong and Lai, Hanjiang and Yin, Jian and Liu, Ye",
+    booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+    month = "June",
+    pages = "23455-23464",
+    title = "{Deep Hashing With Minimal-Distance-Separated Hash Centers}",
+    year = "2023"
+}
