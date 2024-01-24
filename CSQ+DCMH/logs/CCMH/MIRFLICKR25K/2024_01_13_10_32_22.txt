@@ -1,0 +1,30 @@
+using gpu device: 0,1
+training transform:
+img: Compose(
+    Resize(size=[224, 224], interpolation=bilinear, max_size=None, antialias=warn)
+    RandomApply(
+    p=0.8
+    RandomApply(
+    p=0.5
+    RandomRotation(degrees=[90.0, 90.0], interpolation=nearest, expand=False, fill=0)
+    RandomRotation(degrees=[180.0, 180.0], interpolation=nearest, expand=False, fill=0)
+    RandomRotation(degrees=[270.0, 270.0], interpolation=nearest, expand=False, fill=0)
+)
+    RandomHorizontalFlip(p=0.5)
+    RandomVerticalFlip(p=0.5)
+)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)
+txt: Compose(
+    RandomErasure(prob=0.2, value=0.0)
+)
+valid transform
+img: Compose(
+    Resize(size=[224, 224], interpolation=bilinear, max_size=None, antialias=warn)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)
+txt: None
+load data set single Mirflckr25K
+Mirflckr25K data load and shuffle by seed 6

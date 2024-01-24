@@ -1,0 +1,36 @@
+load data set single Mirflckr25K
+Mirflckr25K data load and shuffle by seed 6
+training CCMH for 64 bit. hyper-paramter list:
+   gamma: 1.000
+     eta: 1.000
+learning rate decay: 0.98, decay frequency 10, learning rate:
+     img: 0.10000
+     txt: 0.10000
+img net: MoCo, txt net: MLP
+mean is 32.0; min is 32; var is 0.0; max is 32
+epoch: [  1/500], log loss 0.952	quantization loss 0.008	balance loss 0.000	loss 4.016	center_loss 3.057	pair_loss 3.057	CSQloss 4.016	
+epoch: [  1/500], log loss 0.696	quantization loss 0.006	balance loss 0.430	loss 1.132	center_loss 0.000	pair_loss 0.000	CSQloss 0.000	
+epoch: [  1/500], valid MAP: MAP(i->t): 0.5644, MAP(t->i): 0.5744, MAP(i->i): 0.6236, MAP(t->t): 0.5626 
+ max MAP: MAP(i->t): 0.5644, MAP(t->i): 0.5744, MAP(i->i): 0.6236, MAP(t->t): 0.5626. the best epoch is 1
+epoch: [  2/500], log loss 0.777	quantization loss 0.007	balance loss 0.000	loss 5.865	center_loss 5.081	pair_loss 5.081	CSQloss 5.865	
+epoch: [  2/500], log loss 0.693	quantization loss 0.006	balance loss 0.186	loss 0.886	center_loss 0.000	pair_loss 0.000	CSQloss 0.000	
+epoch: [  2/500], valid MAP: MAP(i->t): 0.5706, MAP(t->i): 0.5604, MAP(i->i): 0.6053, MAP(t->t): 0.5651 
+ max MAP: MAP(i->t): 0.5644, MAP(t->i): 0.5744, MAP(i->i): 0.6236, MAP(t->t): 0.5651. the best epoch is 1
+epoch: [  3/500], log loss 0.718	quantization loss 0.007	balance loss 0.000	loss 1.023	center_loss 0.298	pair_loss 0.298	CSQloss 1.023	
+epoch: [  3/500], log loss 0.692	quantization loss 0.006	balance loss 0.109	loss 0.808	center_loss 0.000	pair_loss 0.000	CSQloss 0.000	
+epoch: [  3/500], valid MAP: MAP(i->t): 0.5799, MAP(t->i): 0.5698, MAP(i->i): 0.6109, MAP(t->t): 0.5705 
+ max MAP: MAP(i->t): 0.5799, MAP(t->i): 0.5698, MAP(i->i): 0.6236, MAP(t->t): 0.5705. the best epoch is 3
+epoch: [  4/500], log loss 0.699	quantization loss 0.006	balance loss 0.000	loss 0.745	center_loss 0.041	pair_loss 0.041	CSQloss 0.745	
+epoch: [  4/500], log loss 0.692	quantization loss 0.006	balance loss 0.071	loss 0.769	center_loss 0.000	pair_loss 0.000	CSQloss 0.000	
+epoch: [  4/500], valid MAP: MAP(i->t): 0.5917, MAP(t->i): 0.5955, MAP(i->i): 0.6233, MAP(t->t): 0.5845 
+ max MAP: MAP(i->t): 0.5917, MAP(t->i): 0.5955, MAP(i->i): 0.6236, MAP(t->t): 0.5845. the best epoch is 4
+epoch: [  5/500], log loss 0.694	quantization loss 0.006	balance loss 0.000	loss 0.767	center_loss 0.067	pair_loss 0.067	CSQloss 0.767	
+epoch: [  5/500], log loss 0.692	quantization loss 0.006	balance loss 0.057	loss 0.755	center_loss 0.000	pair_loss 0.000	CSQloss 0.000	
+): 0.6109, MAP(t->t): 0.5705 
+ max MAP: MAP(i->t): 0.5799, MAP(t->i): 0.5698, MAP(i->i): 0.6236, MAP(t->t): 0.5705. the best epoch is 3
+epoch: [  4/500], log loss 0.699	quantization loss 0.006	balance loss 0.000	loss 0.745	center_loss 0.041	pair_loss 0.041	CSQloss 0.745	
+epoch: [  4/500], log loss 0.692	quantization loss 0.006	balance loss 0.071	loss 0.769	center_loss 0.000	pair_loss 0.000	CSQloss 0.000	
+epoch: [  4/500], valid MAP: MAP(i->t): 0.5917, MAP(t->i): 0.5955, MAP(i->i): 0.6233, MAP(t->t): 0.5845 
+ max MAP: MAP(i->t): 0.5917, MAP(t->i): 0.5955, MAP(i->i): 0.6236, MAP(t->t): 0.5845. the best epoch is 4
+epoch: [  5/500], log loss 0.694	quantization loss 0.006	balance loss 0.000	loss 0.767	center_loss 0.067	pair_loss 0.067	CSQloss 0.767	
+epoch: [  5/500], log loss 0.692	quantization loss 0.006	balance loss 0.057	loss 0.755	center_loss 0.000	pair_loss 0.000	CSQloss 0.000	

@@ -1,0 +1,12 @@
+load data set single Mirflckr25K
+Mirflckr25K data load and shuffle by seed 6
+training CCMH for 64 bit. hyper-paramter list:
+   gamma: 1.000
+     eta: 1.000
+learning rate decay: 0.98, decay frequency 10, learning rate:
+     img: 0.10000
+     txt: 0.10000
+img net: MoCo, txt net: MLP
+mean is 32.0; min is 32; var is 0.0; max is 32
+epoch: [  1/500], log loss 0.982	quantization loss 0.008	balance loss 0.000	loss 3.537	center_loss 2.546	pair_loss 2.546	CSQloss 3.537	
+epoch: [  1/500], log loss 0.695	quantization loss 0.006	balance loss 0.377	loss 1.078	center_loss 0.000	pair_loss 0.000	CSQloss 0.000	
